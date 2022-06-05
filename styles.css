@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  background: url('./assets/heroImage.jpg') no-repeat center / cover;
+}
+
+.hero .hero__title {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 4px 10px black;
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  padding: 50px 20px;
+  border-top: 1px solid rgb(232, 232, 232);
+  transition: 0.3s ease;
+}
+
+.card {
+  width: 100%;
+  max-width: 450px;
+  padding: 70px 40px;
+  background-color: rgb(247, 247, 247);
+  border-radius: 10px;
+}
+
+.card .card__title {
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.card .card__boxes-container {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  grid-template-columns: repeat(2, minmax(100px, 200px));
+  grid-template-rows: repeat(2, 150px);
+}
+
+.card .card__boxes-container .card__box {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.card .card__boxes-container .card__box_black {
+  background-color: black;
+}
+
+.card .card__boxes-container .card__box_dutch {
+  background-color: #f2e2ba;
+}
+
+.card .card__boxes-container .card__box_gray {
+  background-color: #c6c6c6;
+}
+
+.card .card__boxes-container .card__box_navy {
+  background-color: #2e294e;
+}
+
+.box__title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.box__title_black {
+  color: black;
+}
+
+.box__title_white {
+  color: white;
+}
+
+.card .card__button {
+  margin-top: 50px;
+  width: 100%;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: black;
+  transition: 0.3s ease;
+}
